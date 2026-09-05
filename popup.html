@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 220px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 20px 16px;
+      margin: 0;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+      color: #f8fafc;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.25s ease;
+    }
+
+    button:hover {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px);
+    }
+
+    button.active {
+      background: rgba(239, 68, 68, 0.3);
+      border-color: rgba(239, 68, 68, 0.6);
+      color: #fecaca;
+    }
+
+    button.active:hover {
+      background: rgba(239, 68, 68, 0.45);
+    }
+  </style>
+</head>
+<body>
+  <h3>Glasspect</h3>
+  <button id="toggleButton">Activate</button>
+  <script src="popup.js"></script>
+</body>
+</html>

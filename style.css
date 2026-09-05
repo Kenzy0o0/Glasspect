@@ -1,0 +1,69 @@
+#glass-inspector-card {
+  position: fixed;
+  z-index: 999999;
+  pointer-events: none;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+
+  border-radius: 14px;
+  padding: 14px 18px;
+  width: 260px;
+
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+  display: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+#glass-inspector-card.frozen {
+  pointer-events: auto !important;
+  border: 2px solid #3b82f6 !important;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4) !important;
+}
+
+#glass-tag-name {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #1e293b;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 4px;
+  word-break: break-all;
+}
+
+.glass-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.glass-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.glass-value {
+  font-family: monospace;
+  font-weight: 500;
+  color: #111827;
+}
+
+#glass-inspector-card.frozen .glass-value.copyable {
+  cursor: pointer;
+}
+
+#glass-inspector-card.frozen .glass-value.copyable:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.glass-inspector-highlight {
+  outline: 2px dashed #3b82f6 !important;
+  outline-offset: 2px !important;
+  cursor: crosshair !important;
+}
