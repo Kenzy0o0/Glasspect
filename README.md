@@ -21,11 +21,3 @@
 * **CSS3** — Backdrop filters, glassmorphism design, and modern layouts.
 * **HTML5** — Popup interface structure.
 * **Chrome Extension API** — Manifest V3.
-
----
-
-## 🚀 Installation & Setup
-
-1. Clone or download this repository:
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/Glasspect.git](https://github.com/YOUR_USERNAME/Glasspect.git)
